@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     min-height: 100vh;
     background: #000;
     font-family: "Cairo", sans-serif;
@@ -16,15 +17,18 @@ body.light-mode {
     background: #f5f5f5;
     color: #000;
 }
-h4{
+
+h4 {
     font-size: 18px;
     font-weight: bold;
 }
-p{
+
+p {
     font-size: 16px;
     font-weight: 500;
 }
-header{
+
+header {
     display: flex;
     padding: 15px 150px;
     margin: 12px 40px;
@@ -37,38 +41,46 @@ header{
     left: 0;
     right: 0;
 }
-.logo{
+
+.logo {
     color: white;
     font-weight: 900;
     font-size: 20px;
 }
-.navigation ul{
+
+.navigation ul {
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
+
 li {
     list-style: none;
 }
-.active{
+
+.active {
     color: red;
     text-decoration: underline red;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
     font-size: 18px;
     text-decoration: underline transparent;
 }
-.navigation ul li a:hover{
+
+.navigation ul li a:hover {
     text-decoration: underline red;
     color: red;
 }
-ul li i{
+
+ul li i {
     color: white;
 
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,12 +90,14 @@ ul li i{
     margin: auto;
     height: 100vh;
 }
-.container .landing-image img{
+
+.container .landing-image img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
     border: 2px solid #ff00aa;
 }
+
 .container .info {
     color: white;
     width: 50%;
@@ -158,10 +172,12 @@ body.light-mode .service-card:hover {
     padding: 5px;
     font-size: 40px;
 }
-.landing-icons a i:hover{
+
+.landing-icons a i:hover {
     color: red;
 }
-.cv{
+
+.cv {
     font-size: 18px;
     padding: 7px;
     font-weight: 700;
@@ -170,17 +186,20 @@ body.light-mode .service-card:hover {
     border: none;
     margin: 10px;
 }
-.cv:hover{
+
+.cv:hover {
     background: transparent;
     border: 1px solid white;
     color: white;
 }
-.skills{
+
+.skills {
     padding: 15px 150px;
     height: 80vh;
     width: 100%;
 }
-.skills-container{   
+
+.skills-container {
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -191,7 +210,8 @@ body.light-mode .service-card:hover {
     align-items: center;
     align-content: center;
 }
-.language{
+
+.language {
     width: 100%;
     display: flex;
     align-items: center;
@@ -199,12 +219,14 @@ body.light-mode .service-card:hover {
     justify-content: space-between;
     align-items: center;
 }
-.language p{
+
+.language p {
     color: white;
     font-size: 18px;
     font-weight: 500;
 }
-.longline{
+
+.longline {
     width: 80%;
     height: 40px;
     background: #141414;
@@ -215,19 +237,22 @@ body.light-mode .service-card:hover {
     justify-content: center;
     box-shadow: 0px 0px 2px white;
 }
-.shortline{
+
+.shortline {
     background: black;
     width: 95%;
     height: 20px;
     border-radius: 20px;
 }
-.result{
+
+.result {
     width: 80%;
     height: 100%;
     background: white;
-    border-radius: 10px ;
+    border-radius: 10px;
 }
-.skills-container::before{
+
+.skills-container::before {
     content: "Skills";
     color: rgba(255, 255, 255, 0.458);
     font-size: 40px;
@@ -468,7 +493,7 @@ body.light-mode .cv:hover {
         padding: 15px 20px;
         margin: 12px 20px;
     }
-    
+
     .navigation ul {
         gap: 15px;
     }
@@ -480,7 +505,7 @@ body.light-mode .cv:hover {
     .logo {
         font-size: 18px;
     }
-    
+
     .portfolio,
     .contact,
     .skills,
@@ -500,7 +525,7 @@ body.light-mode .cv:hover {
     .service-card i {
         font-size: 30px;
     }
-    
+
     .container .info {
         width: 90%;
     }
@@ -639,57 +664,68 @@ body.light-mode .cv:hover {
     padding: 40px 150px 20px;
     margin-top: 40px;
 }
+
 .site-footer .footer-container {
     display: flex;
     gap: 30px;
     align-items: flex-start;
     justify-content: space-between;
 }
+
 .site-footer .footer-brand {
     max-width: 380px;
 }
+
 .site-footer .footer-brand .logo {
     font-weight: 900;
     font-size: 22px;
     color: #fff;
 }
+
 .site-footer .footer-brand p {
-    color: rgba(255,255,255,0.85);
+    color: rgba(255, 255, 255, 0.85);
     margin-top: 10px;
 }
+
 .site-footer .footer-links {
     display: grid;
     grid-template-columns: repeat(3, minmax(160px, 1fr));
     gap: 20px;
     width: 60%;
 }
+
 .site-footer .footer-col h4 {
     color: #fff;
     margin-bottom: 12px;
 }
+
 .site-footer .footer-col ul {
     list-style: none;
     padding: 0;
 }
+
 .site-footer .footer-col li {
     margin-bottom: 8px;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
 }
+
 .site-footer a {
-    color: rgba(255,255,255,0.9);
+    color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
 }
+
 .site-footer .footer-social a i {
     font-size: 20px;
     margin-right: 10px;
     color: #fff;
 }
+
 .site-footer .footer-bottom {
     text-align: center;
     margin-top: 25px;
-    border-top: 1px solid rgba(255,255,255,0.06);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
     padding-top: 15px;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /* Light mode footer */
@@ -697,12 +733,14 @@ body.light-mode .site-footer {
     background: #f7f7f7;
     color: #000;
 }
+
 body.light-mode .site-footer .footer-brand p,
 body.light-mode .site-footer .footer-col li {
-    color: rgba(0,0,0,0.75);
+    color: rgba(0, 0, 0, 0.75);
 }
+
 body.light-mode .site-footer a {
-    color: rgba(0,0,0,0.9);
+    color: rgba(0, 0, 0, 0.9);
 }
 
 /* Footer responsive */
@@ -710,10 +748,12 @@ body.light-mode .site-footer a {
     .site-footer {
         padding: 40px 50px 20px;
     }
+
     .site-footer .footer-container {
         flex-direction: column;
         gap: 25px;
     }
+
     .site-footer .footer-links {
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
@@ -724,15 +764,17 @@ body.light-mode .site-footer a {
     .site-footer {
         padding: 30px 20px 15px;
     }
+
     .site-footer .footer-links {
         grid-template-columns: 1fr;
     }
+
     .site-footer .footer-brand {
         max-width: 100%;
     }
+
     .site-footer .footer-social a i {
         font-size: 18px;
         margin-right: 8px;
     }
 }
-
